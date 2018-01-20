@@ -1,0 +1,38 @@
+1516416962573	geckodriver	INFO	geckodriver 0.19.1
+1516416962584	geckodriver	INFO	Listening on 127.0.0.1:44771
+1516416963943	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.MjPEAEVc8ay0"
+1516416964902	Marionette	INFO	Enabled via --marionette
+1516416969713	Marionette	INFO	Listening on port 37693
+1516416969851	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516416970137	Marionette	DEBUG	Register listener.js for window 2147483649
+1516416970192	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516416971277	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516416971282	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1516416972053	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.google.com.br/?gws_rd=cr&dcr=0&ei=zK9iWsrIAcLGwASdw4eoAQ"
+1516416974023	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.google.com.br/?gws_rd=cr&dcr=0&ei=zK9iWsrIAcLGwASdw4eoAQ"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1516416982023	geckodriver	INFO	geckodriver 0.19.1
+1516416982034	geckodriver	INFO	Listening on 127.0.0.1:46063
+1516416983158	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.zCJbGQ2An6BW"
+1516416984103	Marionette	INFO	Enabled via --marionette
+1516416989727	Marionette	INFO	Listening on port 41449
+1516416989801	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516416990022	Marionette	DEBUG	Register listener.js for window 2147483649
+1516416990083	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516416990948	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516416990949	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1516416991694	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.google.com.br/?gws_rd=cr&dcr=0&ei=3q9iWqCOHIKxwASQsZGwBw"
+1516416993619	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.google.com.br/?gws_rd=cr&dcr=0&ei=3q9iWqCOHIKxwASQsZGwBw"
+1516447624931	geckodriver	INFO	geckodriver 0.19.1
+1516447624940	geckodriver	INFO	Listening on 127.0.0.1:57159
+1516447626101	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.vRSei5WyOS2x"
+1516447627569	Marionette	INFO	Enabled via --marionette
+1516447630573	Marionette	INFO	Listening on port 43827
+1516447630755	Marionette	WARN	TLS certificate errors will be ignored for this session
+1516447630970	Marionette	DEBUG	Register listener.js for window 2147483649
+1516447631326	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1516447632276	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1516447632277	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1516447632493	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.google.com.br/?gws_rd=cr&dcr=0&ei=jydjWvupMIupwASHt7awBQ"
+1516447633522	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.google.com.br/?gws_rd=cr&dcr=0&ei=jydjWvupMIupwASHt7awBQ"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
