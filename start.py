@@ -5,6 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC 
 from selenium.common.exceptions import TimeoutException
 
+#Metodo de inserção no banco
 def insertData(source,data):    
     post_link = db[source]
     titles = ["Pagina","Localização HTML","Função","URL"]
@@ -59,10 +60,13 @@ def filter(complist,key,links):
 
 browser= webdriver.Firefox()
 url = 'https://www.portaldatransparencia.gov.br'
+
+#Insira sua conexão com o MongoDB do atlas
 client = pymongo.MongoClient("mongodb+srv://mdalboni:brasil317@cluster0-icka9.mongodb.net/brasil317")
 db = client['brasil317']
+
+#loop da lista de links retornado pelo crawler
 linkslist = webcrawler(url)
 for x in linkslist:    
-    #print(x)
     nextPage(x)
 browser.quit()
