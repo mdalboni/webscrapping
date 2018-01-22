@@ -5,6 +5,7 @@ do Selenium.
 
 -Python: https://www.python.org/downloads/<br>
 -Selenium Webdriver: pip install selenium
+-Pymongo: pip install pymongo
 <br>
 <br>
 Ao ser executado o script vai abrir o navegador e raspar todos os links e os textos referentes a eles no Portal da Transparencia.
