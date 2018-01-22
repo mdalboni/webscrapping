@@ -11,7 +11,8 @@ def insertData(source,data):
     titles = ["Pagina","Localização HTML","Função","URL"]
     data = dict(zip(titles,data))
     post_link.insert_one(data).inserted_id
-    
+
+#Primeiro loop    
 def webcrawler(url):
     try:
         browser.get(url)
@@ -45,23 +46,24 @@ def nextPage(url):
         print('NextPage: Algo errado não esta certo')
         print(ex)
 
+#Retirar sujeira do retorno
 def filter(complist,key,links):
     for i in range(len(complist)):
                 rest = complist[i].find_elements_by_tag_name('a')
-                texto = [x.text for x in rest]
+                text = [x.text for x in rest]
                 href = [x.get_attribute("href") for x in rest]
-                for x,y in zip(texto,href):
+                for x,y in zip(text,href):
                     if(len(x)>0):
                         scrapping = [url,key,x,y]
                         links.append(y)                
                         insertData("transparencia",scrapping)
     
 
-
+#Seta qual o navegador e webdriver vai ser utilizado
 browser= webdriver.Firefox()
 url = 'https://www.portaldatransparencia.gov.br'
 
-#Insira sua conexão com o MongoDB do atlas
+#String de conexão com o MongoDB
 client = pymongo.MongoClient("mongodb+srv://mdalboni:brasil317@cluster0-icka9.mongodb.net/brasil317")
 db = client['brasil317']
 
@@ -69,4 +71,6 @@ db = client['brasil317']
 linkslist = webcrawler(url)
 for x in linkslist:    
     nextPage(x)
+
+#Finaliza o navegador
 browser.quit()
